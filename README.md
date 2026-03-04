@@ -5,7 +5,7 @@
 
 É uma rota que muda de acordo com um parâmetro, como um id.
 
-![Exemplo](assets/exemplo-rota.png)
+![Exemplo](/atividade-rotas/assets/exemplo-rota.png)
 
 O que muda é o id.
 Esse ":id" é o parâmetro dinâmico da rota.
@@ -14,7 +14,7 @@ Esse ":id" é o parâmetro dinâmico da rota.
 
 O ParamMap é um recurso do Angular que serve para pegar os parâmetros da rota.
 
-![Exemplo](assets/exemplo-parammap.png)
+![Exemplo](/atividade-rotas/assets/exemplo-parammap.png)
 
 O Angular guarda o parâmetro, como no exemplo ele irá guardar o valor do id.
 
