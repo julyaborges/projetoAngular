@@ -1,0 +1,15 @@
+@if (usuarioNaoEncontrado) {
+  <p>Usuário não encontrado</p>
+}
+
+@if (usuario) {
+  <div>
+    <h2>Detalhes do Usuário</h2>
+    <p><strong>Nome:</strong> {{ usuario.name }}</p>
+    <p><strong>Email:</strong> {{ usuario.email }}</p>
+    <p><strong>Telefone:</strong> {{ usuario.phone }}</p>
+    <p><strong>Website:</strong> {{ usuario.website }}</p>
+    <p><strong>Cidade:</strong> {{ usuario.address.city }}</p>
+    <p><strong>Empresa:</strong> {{ usuario.company.name }}</p>
+  </div>
+}

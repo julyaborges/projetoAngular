@@ -1,0 +1,26 @@
+<h2>Lista de Usuários</h2>
+
+@if (carregando) {
+  <p>Carregando...</p>
+}
+
+@if (erro) {
+  <p>Erro ao carregar usuários.</p>
+}
+
+@if (!carregando && !erro){
+  @for (user of usuarios; track user.id) {
+    <div class="card">
+
+      <p><strong>Nome:</strong> {{ user.name }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Cidade:</strong> {{ user.address.city }}</p>
+
+      <button [routerLink]="['/user-detail', user.id]">
+        Ver detalhes
+      </button>
+
+    </div>
+  }
+}
+
