@@ -36,7 +36,7 @@ Por que o Observable foi utilizado?
 
 O Observable serve para que o Angular espere a resposta da API e entregue os dados quando eles estiverem prontos.
 
-Depois, no componente, usamos subscribe() para receber esses dados e mostrar na tela.
+Depois, no componente, é utilizado o subscribe() para receber esses dados e mostrar na tela.
 
 Prints das Telas:
 
