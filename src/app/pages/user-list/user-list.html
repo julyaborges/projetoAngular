@@ -1,26 +1,35 @@
-<h2>Lista de Usuários</h2>
+<div class="background">
 
-@if (carregando) {
-  <p>Carregando...</p>
-}
+  <div class="main-card">
 
-@if (erro) {
-  <p>Erro ao carregar usuários.</p>
-}
+    <h2 class="title">Lista de Usuários</h2>
 
-@if (!carregando && !erro){
-  @for (user of usuarios; track user.id) {
-    <div class="card">
+    @if (carregando) {
+      <p>Carregando...</p>
+    }
 
-      <p><strong>Nome:</strong> {{ user.name }}</p>
-      <p><strong>Email:</strong> {{ user.email }}</p>
-      <p><strong>Cidade:</strong> {{ user.address.city }}</p>
+    @if (erro) {
+      <p>Erro ao carregar usuários.</p>
+    }
 
-      <button [routerLink]="['/user-detail', user.id]">
-        Ver detalhes
-      </button>
+    @if (!carregando && !erro){
+      @for (user of usuarios; track user.id) {
 
-    </div>
-  }
-}
+        <div class="user-card">
 
+          <p><strong>Nome:</strong> {{ user.name }}</p>
+          <p><strong>Email:</strong> {{ user.email }}</p>
+          <p><strong>Cidade:</strong> {{ user.address.city }}</p>
+
+          <button class="detail-button" [routerLink]="['/user-detail', user.id]">
+            Ver detalhes
+          </button>
+
+        </div>
+
+      }
+    }
+
+  </div>
+
+</div>

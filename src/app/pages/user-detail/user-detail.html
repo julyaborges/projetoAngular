@@ -1,15 +1,23 @@
-@if (usuarioNaoEncontrado) {
-  <p>Usuário não encontrado</p>
-}
+<div class="background">
 
-@if (usuario) {
-  <div>
-    <h2>Detalhes do Usuário</h2>
-    <p><strong>Nome:</strong> {{ usuario.name }}</p>
-    <p><strong>Email:</strong> {{ usuario.email }}</p>
-    <p><strong>Telefone:</strong> {{ usuario.phone }}</p>
-    <p><strong>Website:</strong> {{ usuario.website }}</p>
-    <p><strong>Cidade:</strong> {{ usuario.address.city }}</p>
-    <p><strong>Empresa:</strong> {{ usuario.company.name }}</p>
+  <div class="detail-card">
+
+    @if (usuarioNaoEncontrado) {
+      <p>Usuário não encontrado</p>
+    }
+
+    @if (usuario) {
+
+      <h2 class="detail-title">Detalhes do Usuário</h2>
+
+      <div class="info-card">
+        <p><strong>Nome:</strong> {{ usuario.name }}</p>
+        <p><strong>Email:</strong> {{ usuario.email }}</p>
+        <p><strong>Telefone:</strong> {{ usuario.phone }}</p>
+        <p><strong>Website:</strong> {{ usuario.website }}</p>
+        <p><strong>Cidade:</strong> {{ usuario.address.city }}</p>
+        <p><strong>Empresa:</strong> {{ usuario.company.name }}</p>
+      </div>
+    }
   </div>
-}
+</div>

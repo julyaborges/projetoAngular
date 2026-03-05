@@ -1,0 +1,58 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo gradiente */
+.background {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffb6c1, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card principal */
+.detail-card {
+  background-color: white;
+  width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+.detail-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #d63384;
+}
+
+/* Card interno com informações */
+.info-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+/* Botão voltar */
+.back-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background-color: #d63384;
+}
